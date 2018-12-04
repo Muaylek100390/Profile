@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class Second extends AppCompatActivity {
 
-    ImageButton imgprev ,imgnext;
+    ImageButton imgprev;
+    Button submit;
     EditText username,password,tel;
 
 
@@ -32,8 +34,9 @@ public class Second extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        imgnext = (ImageButton)findViewById(R.id.Next);
-        imgnext.setOnClickListener(new View.OnClickListener() {
+
+        submit = (Button)findViewById(R.id.submit);
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Second.this,Third.class);

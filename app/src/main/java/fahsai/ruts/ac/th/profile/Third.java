@@ -13,6 +13,14 @@ public class Third extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        
+        username = (TextView)findViewById(R.id.Name);
+        password = (TextView)findViewById(R.id.Password);
+        tel = (TextView)findViewById(R.id.Telephone);
+
+
+        username.setText(getIntent().getStringExtra("name"));
+        password.setText(getIntent().getStringExtra("password"));
+        tel.setText(getIntent().getStringExtra("phone"));
+
     }
 }
