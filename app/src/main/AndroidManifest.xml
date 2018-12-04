@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Second" />
-        <activity android:name=".Third"></activity>
+        <activity android:name=".Third" />
+        <activity android:name=".Fourth"></activity>
     </application>
 
 </manifest>
