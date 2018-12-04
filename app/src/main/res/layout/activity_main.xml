@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -18,7 +18,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bgbt"
-        android:text="NEXT"
+        android:text="Next"
         android:textColor="@color/bttext"
         android:textSize="@dimen/Textsize"
         android:textStyle="bold"
@@ -39,6 +39,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bgtext"
+        android:fontFamily="@font/sanam"
         android:text="@string/name"
         android:textColor="@color/Text"
         android:textSize="24sp"
@@ -64,6 +65,7 @@
         android:textColor="@color/Text"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:fontFamily="@font/sanam"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
@@ -102,6 +104,7 @@
         android:textColor="@color/Text"
         android:textSize="@dimen/Textsize"
         android:textStyle="bold"
+        android:fontFamily="@font/wr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.235"
