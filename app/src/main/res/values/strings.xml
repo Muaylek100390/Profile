@@ -8,4 +8,5 @@
     <string name="password">Password</string>
     <string name="phone">Telephone</string>
     <string name="welcome1">WELCOME TO YOUR</string>
+    <string name="title_activity_fifth">fifth</string>
 </resources>
