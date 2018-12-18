@@ -80,18 +80,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="คำนวน"
+        android:textSize="@dimen/textsize2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.928" />
 
     <Button
         android:id="@+id/btnHome1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="กลับสู่หน้าหลัก"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="427dp" />
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
 
 </android.support.constraint.ConstraintLayout>

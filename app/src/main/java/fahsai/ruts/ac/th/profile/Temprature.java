@@ -13,8 +13,8 @@ public class Temprature extends AppCompatActivity {
 
     private EditText editdata;
     private RadioGroup Group;
-    private String strTemp ,strTempRadio="Celsuis",strAns;
-    private double douAns;
+    private String strTemp ,strTempRadio="Celcuis",strAns;
+    private double douAnswer;
     private Button HomePage ,Cal;
 
     @Override
@@ -40,25 +40,41 @@ public class Temprature extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     strTemp = editdata.getText().toString().trim();
-                    if (strTemp.equals(" ")) {
+
+                    if (strTemp.equals("")) {
                         Log.d("Space", "It Have space In Blank.");
 
                     }
                     else if(strTempRadio=="Celcius"){
 
+                        CalculateCelcius();
                         Intent intent = new Intent(Temprature.this,result.class);
+                            intent.putExtra("Tem",strTemp);
+                            intent.putExtra("Unit",strTempRadio);
+                            intent.putExtra("Answer",strAns);
+
                         startActivity(intent);
                         Log.d("Pass","It Have space in Data");
 
                     }else if(strTempRadio=="Fahrenheit") {
 
+                        CalculateFahrenheit ();
                         Intent intent = new Intent(Temprature.this, result.class);
+                            intent.putExtra("Tem",strTemp);
+                            intent.putExtra("Unit",strTempRadio);
+                            intent.putExtra("Answer",strAns);
+
                         startActivity(intent);
                         Log.d("Pass", "It Have space in Data");
 
                     }else if(strTempRadio=="Kalvin") {
 
-                            Intent intent = new Intent(Temprature.this, result.class);
+                        CalculateKalvin();
+                        Intent intent = new Intent(Temprature.this, result.class);
+                            intent.putExtra("Tem",strTemp);
+                            intent.putExtra("Unit",strTempRadio);
+                            intent.putExtra("Answer",strAns);
+
                             startActivity(intent);
                             Log.d("Pass", "It Have space in Data");
                     }
@@ -72,12 +88,30 @@ public class Temprature extends AppCompatActivity {
                 switch (i){
                     case R.id.radioCel:
                         strTempRadio ="Celcius";
+                        break;
                     case R.id.radioFaren:
                         strTempRadio ="Fahrenheit";
+                        break;
                     case R.id.radioKil:
                         strTempRadio ="Kalvin";
+                        break;
                 }
             }
         });
+    }
+
+    private void CalculateCelcius(){
+        douAnswer = Double.parseDouble(strTemp);
+        strAns = Double.toString(douAnswer);
+
+    }
+    private void CalculateFahrenheit(){
+        douAnswer = Double.parseDouble(strTemp)*1.8+32;
+        strAns = Double.toString(douAnswer);
+
+    }private void CalculateKalvin(){
+        douAnswer = Double.parseDouble(strTemp)+273.15;
+        strAns = Double.toString(douAnswer);
+
     }
 }

@@ -40,7 +40,7 @@ public class Third extends AppCompatActivity {
         Cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Third.this,Fourth.class);
+                Intent intent = new Intent(Third.this,Temprature.class);
                 startActivity(intent);
             }
         });

@@ -30,7 +30,7 @@ public class Second extends AppCompatActivity {
         imgprev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Second.this,Third.class);
+                Intent intent = new Intent(Second.this,MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -8,16 +8,99 @@
     tools:context=".result">
 
     <TextView
-        android:id="@+id/Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/bgtext"
-        android:text="ผลการคำนวน"
-        android:textColor="@color/bgbt"
+        android:text="ผลลัพธ์"
+        android:textColor="@color/Text"
         android:textSize="@dimen/testsize3"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textColor="@color/Text"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/Get"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textColor="@color/Text"
+        android:textSize="@dimen/textsize1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textColor="@color/Text"
+        android:textSize="@dimen/testsize3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:text="  แปลงเป็นองศา"
+        android:textColor="@color/bgbt"
+        android:textSize="@dimen/Textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:text="  ค่าที่รับมา"
+        android:textColor="@color/bgbt"
+        android:textSize="@dimen/Textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:text="  มีค่าเท่ากับ"
+        android:textColor="@color/bgbt"
+        android:textSize="@dimen/Textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
 </android.support.constraint.ConstraintLayout>
