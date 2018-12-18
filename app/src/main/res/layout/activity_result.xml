@@ -23,28 +23,25 @@
 
     <TextView
         android:id="@+id/Temp"
-        android:layout_width="88dp"
-        android:layout_height="44dp"
-        android:text="TextView"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
         android:textColor="@color/Text"
         android:textSize="@dimen/textsize1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Get"
         android:layout_width="88dp"
         android:layout_height="44dp"
-        android:text="TextView"
         android:textColor="@color/Text"
         android:textSize="@dimen/textsize1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.327" />
@@ -53,12 +50,11 @@
         android:id="@+id/Result"
         android:layout_width="88dp"
         android:layout_height="44dp"
-        android:text="TextView"
         android:textColor="@color/Text"
         android:textSize="@dimen/testsize3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
@@ -103,4 +99,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        android:background="@drawable/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904" />
 </android.support.constraint.ConstraintLayout>
