@@ -7,6 +7,24 @@
     android:background="@drawable/bgyg"
     tools:context=".Third">
 
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="80dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/prev" />
+
     <TextView
         android:id="@+id/Name"
         android:layout_width="wrap_content"
@@ -111,23 +129,24 @@
 
     <Button
         android:id="@+id/cal"
-        android:layout_width="184dp"
-        android:layout_height="wrap_content"
+        android:layout_width="219dp"
+        android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/bgbt"
         android:text="Calculator"
-        android:textColor="@color/bgbt"
-        android:textSize="@dimen/Textsize"
+        android:textColor="@color/secondpage"
+        android:textSize="@dimen/textsize2"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.935" />
 
 </android.support.constraint.ConstraintLayout>

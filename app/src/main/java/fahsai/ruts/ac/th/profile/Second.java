@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 public class Second extends AppCompatActivity {
 
     ImageButton imgprev;
-    Button submit;
+    private Button Submit;
     EditText username,password,tel;
 
 
@@ -30,20 +30,20 @@ public class Second extends AppCompatActivity {
         imgprev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Second.this,MainActivity.class);
+                Intent intent = new Intent(Second.this,Third.class);
                 startActivity(intent);
             }
         });
 
-        submit = (Button)findViewById(R.id.submit);
-        submit.setOnClickListener(new View.OnClickListener() {
+        Submit = (Button)findViewById(R.id.btnSummit);
+        Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Second.this,Third.class);
 
-                intent.putExtra("name",username.getText().toString());
-                intent.putExtra("password",password.getText().toString());
-                intent.putExtra("phone",tel.getText().toString());
+               intent.putExtra("name",username.getText().toString());
+               intent.putExtra("password",password.getText().toString());
+               intent.putExtra("phone",tel.getText().toString());
 
                 startActivity(intent);
             }

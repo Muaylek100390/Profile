@@ -19,7 +19,9 @@
         <activity android:name=".Second" />
         <activity android:name=".Third" />
         <activity android:name=".Fourth" />
-        <activity android:name=".Fifth1"></activity>
+        <activity android:name=".Fifth1" />
+        <activity android:name=".Temprature" />
+        <activity android:name=".result"></activity>
     </application>
 
 </manifest>
